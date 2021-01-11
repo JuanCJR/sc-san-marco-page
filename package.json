@@ -1,0 +1,29 @@
+{
+  "name": "sc-san-marco-page",
+  "version": "1.0.0",
+  "description": "Website sala cuna San Marco",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanCJR/sc-san-marco-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanCJR/sc-san-marco-page/issues"
+  },
+  "homepage": "https://github.com/JuanCJR/sc-san-marco-page#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^17.0.1"
+  }
+}
