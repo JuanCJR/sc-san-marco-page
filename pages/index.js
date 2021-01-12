@@ -1,7 +1,7 @@
 import Head from "next/head";
 import IndexContainer from "../components/Container";
 import Carousel from "react-bootstrap/Carousel";
-import { Col, Row, Container, Image, Card, Button } from "react-bootstrap";
+import { Col, Row, Container, Image, Card } from "react-bootstrap";
 
 
 const imgArray = [

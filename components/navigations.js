@@ -29,20 +29,15 @@ const Navigations = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link href="/about">
-            <a className="nav-link">Nosotros</a>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link href="/about">
+          <Link href="/galeria">
             <a className="nav-link">Galeria</a>
           </Link>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link href="/reservar">
             <a className="nav-link">Contacto</a>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </Navbar>
   );
