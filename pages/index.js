@@ -2,6 +2,14 @@ import Head from "next/head";
 import IndexContainer from "../components/Container";
 import Carousel from "react-bootstrap/Carousel";
 import { Col, Row, Container, Image, Card, Button } from "react-bootstrap";
+
+
+const imgArray = [
+  "img1.jpeg",
+  "img2.jpeg",
+  "img3.jpeg"
+]
+
 const Index = (props) => {
   return (
     <IndexContainer>
@@ -14,74 +22,82 @@ const Index = (props) => {
         {/* Col 1 */}
         <Row className="justify-content-md-center">
 
-        <Col sm={5} >
+          <Col sm={6} >
             <Card border="primary" className="carousel-div shadowCard">
               <Card.Body>
                 <Carousel>
-                  <Carousel.Item>
-                    <Image
-                      className="carouselImg"
-                      src="img/img1.jpg"
-                      alt="1"
-                      rounded
-                    />
-                  </Carousel.Item>
+
+                  {imgArray.map(i => {
+                    return <Carousel.Item>
+                      <Image
+                        className="carouselImg"
+                        src={`img/${i}`}
+                        alt="1"
+                        rounded
+                      />
+                    </Carousel.Item>
+                  })}
+
+
                 </Carousel>
               </Card.Body>
             </Card>
-        </Col>
-         {/* COL 2 */}
-         <Col sm={6}>
-            <p className="parrafo">
-              Al igual que tú, somos padres que pasamos por la difícil tarea de
-              buscar un buen jardín infantil para nuestros hijos, donde
-              aprendieran, jugaran seguros y, sobre todo, fueran tratad
-              <span style={{color:"#000000"}}>os con cari</span>ño por las tías.
+          </Col>
+          {/* COL 2 */}
+          <Col sm={5}>
+            <p className="parrafo text-left">
+              Sala cuna san marco es un centro educativo particular que tiene como
+              objetivo brindar una Atención integral y de calidad a los hijos e hijas de
+              las funcionarias de empresas que contratan nuestros servicios y
+              responden a los requerimientos educativos de sus familias mientras
+              sus madres se encuentran en sus trabajos.
             </p>
 
-        </Col>
+          </Col>
         </Row>
 
-       
+
       </Container>
       <Container fluid className="secondContainer shadowCard">
         <Row className="justify-content-md-center">
           <Col md="3">
             <Card className="shadowCard infoCard mt-5">
               <Card.Body>
-                <h1>¿ERES MENOR DE EDAD?</h1>
-                <p>
-                  Lo principal es tu seguridad y la tranquilidad de tus padres.
-                  Si tienes entre 10 y 14 años necesitarás una autorización de
-                  un adulto responsable para jugar.
+                <h1>VISIÒN</h1>
+                <p className="text-left"> 
+                  Lograr  una educación de calidad, que potencie todos los aspectos de los infantes, favoreciendo aprendizajes oportunos y con sentido para los niños y niñas, formando personas que hagan cambios significativos para la sociedad en la cual están insertos.
+
                 </p>
-                <Button className="mt-3">Indicaciones</Button>
+
               </Card.Body>
             </Card>
           </Col>
           <Col md="4">
             <Card className="shadowCard infoCard mt-5">
               <Card.Body>
-                <h1>RESERVA Y VEN A DISFRUTAR CON NOSOTROS</h1>
-                <p>
-                  Libera todas tus tensiones acumuladas de la vida diaria,
-                  prueba esta nueva receta para relajarte y desconéctate
-                  practicando Paintball. Para reservar ponte en contacto con
-                  nosotros:
+                <h1>MISIÒN</h1>
+                <p className="text-left">
+                  Ofrecer educación de calidad, oportuna y pertinente que favorezca aprendizaje relevante y significativo en función al bienestar y al desarrollo pleno de la niña y el niño como persona, en un ambiente propicio para el aprendizaje.
+
                 </p>
-                <Button className="mt-1">Reservar</Button>
+
               </Card.Body>
             </Card>
           </Col>
           <Col md="4">
             <Card className="shadowCard infoCard mt-5">
               <Card.Body>
-                <h1>RESERVA Y VEN A DISFRUTAR CON NOSOTROS</h1>
-                Libera todas tus tensiones acumuladas de la vida diaria, prueba
-                esta nueva receta para relajarte y desconéctate practicando
-                Paintball. Para reservar ponte en contacto con nosotros:
-                <br></br>
-                <Button className="mt-3">Ver Todas</Button>
+                <h1>VALORES</h1>
+                <ul>
+                  <li className="text-left">
+                    Educar a los niños y niñas bajo una formación valórica dando énfasis al amor por la familia respeto a las diferencias, responsabilidad y perseverancia, formando personas de bien para enfrentar con éxito los desafíos de su proyecto de vida.
+                  </li>
+                  <li className="text-left">
+                    Fomentar el amor y respeto a la naturaleza y a la solidaridad en la sociedad, desarrollar el espíritu emprendedor y su capacidad de aprender a lo largo de la vida
+                  </li>
+                </ul>
+
+
               </Card.Body>
             </Card>
           </Col>
@@ -97,62 +113,23 @@ const Index = (props) => {
       >
         <Row className="justify-content-md-center mt-4">
           <Col>
-            <h2 style={{ color: "black" }}>VALORES</h2>
+            <h2 style={{ color: "black" }}>HISTORIA</h2>
           </Col>
         </Row>
         <Row className="justify-content-md-center">
           <Col>
-            <Card className="shadowCard infoCard2 mt-5">
+            <Card className="shadowCard infoCard2 mt-5 text-left">
               <Card.Body>
-                <h2>
+                {/* <h2>
                   <strong>BÁSICO</strong>
-                </h2>
-                <p>Arriendo equipamiento + 100 paintballs</p>
-                <h1>$ 9.000</h1>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="shadowCard infoCard2 mt-5">
-              <Card.Body>
-                <h2>
-                  <strong>INTERMEDIO</strong>
-                </h2>
-                <p>Arriendo equipamiento + 200 paintballs</p>
-                <h1>$ 10.500</h1>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="shadowCard infoCard2 mt-5">
-              <Card.Body>
-                <h2>
-                  <strong>FULL GAME</strong>
-                </h2>
-                <p>Arriendo equipamiento + 300 paintballs</p>
-                <h1>$ 13.500</h1>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="shadowCard infoCard2 mt-5">
-              <Card.Body>
-                <h2>
-                  <strong>FANÁTICO</strong>
-                </h2>
-                <p>Arriendo equipamiento + 400 paintballs</p>
-                <h1>$ 15.500</h1>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="shadowCard infoCard2 mt-5">
-              <Card.Body>
-                <h2>
-                  <strong>PRO PLAYER</strong>
-                </h2>
-                <p>Arriendo equipamiento + 500 paintballs</p>
-                <h1>$ 17.000</h1>
+                </h2> */}
+                <p>El 1 de Marzo de 1981 se creó el Jardín Infantil San Marco, que contaba con los niveles transición I y transición II con media jornada de mañana y tarde para responder a una necesidad de atención de niños y niñas de la comuna. Estos educando asisten en forma particular.
+                  <br></br>
+                  <br></br>
+En marzo de 1985 se crea además la sala cuna para atender a hijos (as) de madres trabajadoras pertenecientes a la comuna previo contrato. La sala cuna atiende de lunes a viernes en jornada completa de 07.30 a 19.30 HRS y de enero a diciembre. También para responder a una necesidad de tener una sala cuna cerca de su lugar de residencia y/o lugar de trabajo.
+El 28 de febrero de 2010 se comienzan las modificaciones estructurales para cumplir con las normas de la junta nacional de jardines infantiles (JUNJI) para obtener el rol respectivo para atender solo niveles de sala cuna.
+</p>
+
               </Card.Body>
             </Card>
           </Col>
@@ -164,13 +141,13 @@ const Index = (props) => {
           <p className="float-right">
             <a href="/"> Ir al inicio</a>
           </p>
-          <p>Centro recreativo de Paintball</p>
+          <p>Sala Cuna San Marco</p>
           <p>
-            <img className="mr-2" src="img/instagram.png" alt="Second slide" />
+            <img className="mr-2" style={{width:"30px"}} src="img/instagram.png" alt="Second slide" />
             Instagram
           </p>
           <p>
-            <img className="mr-2" src="img/facebook.png" alt="Second slide" />
+            <img className="mr-2" style={{width:"30px"}} src="img/facebook.png" alt="Second slide" />
             Facebook
           </p>
         </Container>
