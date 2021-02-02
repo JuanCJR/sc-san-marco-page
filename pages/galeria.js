@@ -3,12 +3,12 @@ import IndexContainer from "../components/Container";
 import { Col, Row, Container, Image, Card } from "react-bootstrap";
 
 const imgArray = [
-    "img12.jpg",
-    "img11.jpg",
-    "img13.jpg",
-    "img7.jpg",
-    "img8.jpg",
-    "img9.jpg",
+    "img12.jpeg",
+    "img11.jpeg",
+    "img13.jpeg",
+    "img7.jpeg",
+    "img8.jpeg",
+    "img9.jpeg",
     "img1.jpeg",
     "img2.jpeg",
     "img3.jpeg",

@@ -64,8 +64,9 @@ const Index = (props) => {
             <Card className="shadowCard infoCard mt-5">
               <Card.Body>
                 <h1>VISIÒN</h1>
-                <p className="text-left"> 
-                  Lograr  una educación de calidad, que potencie todos los aspectos de los infantes, favoreciendo aprendizajes oportunos y con sentido para los niños y niñas, formando personas que hagan cambios significativos para la sociedad en la cual están insertos.
+                <p className="text-left">
+                  Lograr  una educación de calidad, que potencie todos los aspectos de los infantes, favoreciendo aprendizajes oportunos y con sentido para los niños y niñas.
+                  {/* , formando personas que hagan cambios significativos para la sociedad en la cual están insertos. */}
 
                 </p>
 
@@ -77,7 +78,8 @@ const Index = (props) => {
               <Card.Body>
                 <h1>MISIÒN</h1>
                 <p className="text-left">
-                  Ofrecer educación de calidad, oportuna y pertinente que favorezca aprendizaje relevante y significativo en función al bienestar y al desarrollo pleno de la niña y el niño como persona, en un ambiente propicio para el aprendizaje.
+                  Ofrecer educación de calidad, oportuna y pertinente que favorezca aprendizaje relevante y significativo.
+                   {/* en función al bienestar y al desarrollo pleno de la niña y el niño como persona, en un ambiente propicio para el aprendizaje. */}
 
                 </p>
 
@@ -90,10 +92,12 @@ const Index = (props) => {
                 <h1>VALORES</h1>
                 <ul>
                   <li className="text-left">
-                    Educar a los niños y niñas bajo una formación valórica dando énfasis al amor por la familia respeto a las diferencias, responsabilidad y perseverancia, formando personas de bien para enfrentar con éxito los desafíos de su proyecto de vida.
+                    Educar a los niños y niñas bajo una formación valórica dando énfasis al amor por la familia respeto a las diferencias, responsabilidad y perseverancia.
+                    {/* , formando personas de bien para enfrentar con éxito los desafíos de su proyecto de vida. */}
                   </li>
-                  <li className="text-left">
-                    Fomentar el amor y respeto a la naturaleza y a la solidaridad en la sociedad, desarrollar el espíritu emprendedor y su capacidad de aprender a lo largo de la vida
+                  <li className="text-left mt-3">
+                    Fomentar el amor y respeto a la naturaleza y a la solidaridad en la sociedad.
+                    {/* , desarrollar el espíritu emprendedor y su capacidad de aprender a lo largo de la vida */}
                   </li>
                 </ul>
 
@@ -126,8 +130,12 @@ const Index = (props) => {
                 <p>El 1 de Marzo de 1981 se creó el Jardín Infantil San Marco, que contaba con los niveles transición I y transición II con media jornada de mañana y tarde para responder a una necesidad de atención de niños y niñas de la comuna. Estos educando asisten en forma particular.
                   <br></br>
                   <br></br>
-En marzo de 1985 se crea además la sala cuna para atender a hijos (as) de madres trabajadoras pertenecientes a la comuna previo contrato. La sala cuna atiende de lunes a viernes en jornada completa de 07.30 a 19.30 HRS y de enero a diciembre. También para responder a una necesidad de tener una sala cuna cerca de su lugar de residencia y/o lugar de trabajo.
-El 28 de febrero de 2010 se comienzan las modificaciones estructurales para cumplir con las normas de la junta nacional de jardines infantiles (JUNJI) para obtener el rol respectivo para atender solo niveles de sala cuna.
+En marzo de 1985 se crea además la sala cuna para atender a hijos (as) de madres trabajadoras. 
+{/* pertenecientes a la comuna previo contrato.  */}
+ {/* La sala cuna atiende de lunes a viernes en jornada completa de 07.30 a 19.30 HRS y de enero a diciembre. También para responder a una necesidad de tener una sala cuna cerca de su lugar de residencia y/o lugar de trabajo. */}
+ <br></br>
+ <br></br>
+ El 28 de febrero de 2010 se comienzan las modificaciones estructurales para cumplir con las normas de la junta nacional de jardines infantiles (JUNJI) para obtener el rol respectivo para atender solo niveles de sala cuna.
 </p>
 
               </Card.Body>
@@ -143,11 +151,11 @@ El 28 de febrero de 2010 se comienzan las modificaciones estructurales para cump
           </p>
           <p>Sala Cuna San Marco</p>
           <p>
-            <img className="mr-2" style={{width:"30px"}} src="img/instagram.png" alt="Second slide" />
+            <img className="mr-2" style={{ width: "30px" }} src="img/instagram.png" alt="Second slide" />
             Instagram
           </p>
           <p>
-            <img className="mr-2" style={{width:"30px"}} src="img/facebook.png" alt="Second slide" />
+            <img className="mr-2" style={{ width: "30px" }} src="img/facebook.png" alt="Second slide" />
             Facebook
           </p>
         </Container>
